@@ -106,7 +106,7 @@ API2: [Rest Countries](https://restcountries.eu/#api-endpoints-all)
 
 ## Wireframes
 
-![LWL wireframe](./LWL wireframe.png)<br />
+<img width="353" alt="LWL wireframe" src="https://user-images.githubusercontent.com/66581031/122876348-694dc880-d303-11eb-907f-a197d2a0f0e9.png">
 
 
 ## MVP 
