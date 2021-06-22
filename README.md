@@ -161,16 +161,20 @@ API2: [Rest Countries](https://restcountries.eu/#api-endpoints-all)
 
 ## MVP 
 
-- Use axios to make a request to Rest Countries and Open Weather.
-- Add type to search, dropdown menu, and random location button functionality.
+- Use axios to make a request to get current weather conditions.
+- Add type to search and dropdown menu functionality.
+- Render dynamic temperature conditions, city name, time zone, and weather description.
 - Style using Flexbox.
-- Implement responsive design using at least one media query/breakpoint (desktop).
+- Clear search results on query.
 - Deploy site to a hosting service.
 
 
 ## PostMVP  
 
 - Home page should show users current location.
+- Pull users location from browser.
+- Rest Countries (TBD).
+- Random location button functionality
 - Add animations.
 - Look into localstorage so I can save data to user's browser.
 - Add a filter by timezone/country section.
