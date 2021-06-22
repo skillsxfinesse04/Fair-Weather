@@ -106,7 +106,7 @@ API2: [Rest Countries](https://restcountries.eu/#api-endpoints-all)
 
 ## Wireframes
 
-<img width="353" alt="LWL wireframe" src="https://user-images.githubusercontent.com/66581031/122876348-694dc880-d303-11eb-907f-a197d2a0f0e9.png">
+![P1 Wireframe](https://user-images.githubusercontent.com/66581031/122944389-c9fdf500-d345-11eb-95d7-bef75edb2d7f.png)
 
 
 ## MVP 
@@ -139,7 +139,7 @@ API2: [Rest Countries](https://restcountries.eu/#api-endpoints-all)
 
 ## Priority Matrix
 
-(Image goes here)
+![P1 Priority Matrix](https://user-images.githubusercontent.com/66581031/122933019-3d9b0480-d33c-11eb-83d9-b1f82e854422.png)
 
 
 ## Timeframes
