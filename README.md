@@ -11,9 +11,59 @@ The location and weather lookup application lets a user lookup a location and it
 ## API and API Snippet
 
 API: [OpenWeather](https://openweathermap.org/current)
+```
+{
+    "coord": {
+        "lon": -73.9496,
+        "lat": 40.6501
+    },
+    "weather": [
+        {
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 296.6,
+        "feels_like": 296.83,
+        "temp_min": 291.61,
+        "temp_max": 300.39,
+        "pressure": 1005,
+        "humidity": 70
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 1.79,
+        "deg": 50,
+        "gust": 1.79
+    },
+    "rain": {
+        "1h": 0.15
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1624373099,
+    "sys": {
+        "type": 2,
+        "id": 2037026,
+        "country": "US",
+        "sunrise": 1624353915,
+        "sunset": 1624408223
+    },
+    "timezone": -14400,
+    "id": 5110302,
+    "name": "Brooklyn",
+    "cod": 200
+}
+```
 
 API2: [Rest Countries](https://restcountries.eu/#api-endpoints-all)
-```[
+```
+[
     {
         "name": "United States of America",
         "topLevelDomain": [
