@@ -114,7 +114,7 @@ API2: [Rest Countries](https://restcountries.eu/#api-endpoints-all)
 - Use axios to make a request to Rest Countries and Open Weather.
 - Add type to search, dropdown menu, and random location button functionality.
 - Style using Flexbox.
-- Implement responsive design using at least one media query/breakpoint (mobile).
+- Implement responsive design using at least one media query/breakpoint (desktop).
 - Deploy site to a hosting service.
 
 
@@ -123,6 +123,7 @@ API2: [Rest Countries](https://restcountries.eu/#api-endpoints-all)
 - Home page should show users current location.
 - Add animations.
 - Look into localstorage so I can save data to user's browser.
+- Add a filter by timezone/country section.
 
 
 ## Goals
