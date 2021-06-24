@@ -1,4 +1,8 @@
-// Issues: Last state keeps populating. Dropdown list won't work. Get help to achieve MVP.
+// 1. Can all the API link be put into an array and called using ${}? How would this work for states like New York (new+york)?
+// 2. States won't append to text input or dropdown list. 
+// 3. The last state (Wyoming) appears over and over. I tried commenting out fetchData() but that didn't do anything.
+// 4. For the dropdown menu is it possible to put the values in there predefined (write out each state), and then have an API link associated with each value?
+// 5. The state data appears on page load and won't clear.
 
 
 
