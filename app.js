@@ -1,6 +1,7 @@
 // 1. Can all the API link be put into an array and called using ${}? How would this work for states like New York (new+york)?
 // 2. States won't append to text input or dropdown list. 
 // 3. The last state (Wyoming) appears over and over. I tried commenting out fetchData() but that didn't do anything.
+// 3a. The issue was showStateData(response.data), but it removes all data and I still can't get text input to work.
 // 4. For the dropdown menu is it possible to put the values in there predefined (write out each state), and then have an API link associated with each value?
 // 5. The state data appears on page load and won't clear.
 
@@ -14,8 +15,8 @@
 
 
 // Global variables:
-// Creates a variable called citiesDiv that refers to the state class.
-const stateDiv = document.querySelector(".cities");
+// Creates a variable called statesDiv that refers to the state class.
+const stateDiv = document.querySelector(".states");
 
 // Creates a variable called button that refers to the button class.
 const button = document.querySelector(".button");
@@ -747,7 +748,7 @@ async function fetchData() {
     const url = "http://api.openweathermap.org/data/2.5/weather?q=wyoming&appid=1d015797722f985c58d03693976c4b24"
     const response = await axios(url);
     // console.log(response.data);
-    showStateData(response.data);
+    // showStateData(response.data);
     return response;
   } catch (error) {
     console.error(error);
