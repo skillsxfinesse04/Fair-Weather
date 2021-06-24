@@ -1,0 +1,9 @@
+/* Fix later, displays in a row.
+.countries {
+  display: flex;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+} */

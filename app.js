@@ -1,84 +1,865 @@
-// API endpoints:
-// Countries: 
-// 1. https://restcountries.eu/rest/v2/all
-// 2. https://restcountries.eu/rest/v2/name/${country}?fullText=true
-// Weather: api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}
-// 
+// Issues: Last state keeps populating. Dropdown list won't work. Get help to achieve MVP.
+
+
+
+
+// API Endpoint (Weather):  api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+// API Key (Weather): 1d015797722f985c58d03693976c4b24
+
+
+
 
 // Global variables:
-// Creates a variable called countriesDiv that refers to the countries class.
-const countriesDiv = document.querySelector(".countries");
+// Creates a variable called citiesDiv that refers to the state class.
+const stateDiv = document.querySelector(".cities");
 
-// Creates a variable called button2 that refers to the button class.
+// Creates a variable called button that refers to the button class.
 const button = document.querySelector(".button");
 
-// Creates a variable called button2 that refers to the button class.
-const button2 = document.querySelector(".button2");
+// ...
+const dataContainer = document.querySelector("state-#data");
 
 
 
-// Creates a variable called getData, that's assigned to an arrow function, that allows us to get data from an API (via promise... then/catch).
-const getData = () => {
-  axios.get("https://restcountries.eu/rest/v2/all")
-    .then((response) => {
-      // Logs API data to browser console.
-      const data = response.data;
-      // console.log(data);
 
-      // A for loop that goes through every index in the API data array.
-      for (let i = 0; i < data.length; i++) {
-        // Logs out all indexes in the API data array (250 total).
-        console.log(data[i]);
+// Try/catch & async/await function for each state (50 total).
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=alabama&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
 
-        // Creates a variable and div element called countryDiv.
-        const countryDiv = document.createElement("div");
-        // Adds a class called country. 
-        countryDiv.classList.add("country");
-        // Appends the country class to the countries class.
-        countriesDiv.append(countryDiv);
 
-        // Creates a variable and h3 element called nameElement.
-        const nameElement = document.createElement("h3");
-        // Adds text to nameElement (country name). 
-        nameElement.textContent = `Country: ${data[i].name}`;
-        // Appends text (country name) to country class.
-        countryDiv.append(nameElement);
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=alaska&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
 
-        // Creates a variable and p element called capitalElement.
-        const capitalElement = document.createElement("p");
-        // Adds text to capitalElement (country capital).
-        capitalElement.textContent = `Capital: ${data[i].capital}`;
-        // Appends text (country capital) to country class.
-        countryDiv.append(capitalElement);
-      }
-      // Not yet.
-      return data;
-    })
-    .catch((error) => {
-      // handle error
-      console.error(error);
-    })
-    .finally(() => {
-      // always executed
-    })
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=arizona&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=arkansas&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=california&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=colorado&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=connecticut&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=delaware&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=florida&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=georgia&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=hawaii&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=idaho&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=indiana&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=iowa&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=kansas&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=kentucky&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=louisiana&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=kansas&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=kentucky&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=louisiana&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=maine&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=maryland&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=massachusetts&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=michigan&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=minnesota&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=mississippi&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=missouri&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=montana&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=nebraska&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=nevada&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=new+hampshire&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=new+jersey&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=new+mexico&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=new+york&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=north+carolina&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=north+dakota&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=ohio&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=oklahoma&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=oregon&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=pennsylvania&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=rhode+island&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=south+carolina&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=south+dakota&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=tennessee&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=texas&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=utah&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=vermont&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=virginia&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=washington&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=west+virginia&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=wisconsin&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+async function fetchData() {
+  try {
+    const url = "http://api.openweathermap.org/data/2.5/weather?q=wyoming&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios(url);
+    // console.log(response.data);
+    showStateData(response.data);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
+
+
+
+
+// Create dynamic HTML.
+function showStateData(data) {
+  const dataContainer = document.querySelector("#state-data");
+  console.log(data);
+  let stateData = `<h1>${data.name}</h1> <h3>Temperature: ${data.main.temp}</h3> <h3>Weather description: ${data.weather[0].description}</h3> <h3>Timezone: ${data.timezone}</h3>`
+
+  dataContainer.insertAdjacentHTML("beforeend", stateData);
+  return stateData;
 };
 
-// Need to invoke function in order to see data in console. Comment out when done.
-// getData();
 
 
-// Adds an event when the button 2 class (Random Capital) is clicked...
-button2.addEventListener("click", () => {
-  // ... which invokes the removeCountry() function.
-  removeCountry();
-  getData();
+
+// Dynamically search state using HTML form with eventHandler.
+const form = document.querySelector("#state-form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const inputValue = document.querySelector("state-search").value;
+  // console.log(inputValue);
+
+  // Remove elements.
+  removeState(dataContainer);
+
+  // API call.
+  fetchData(inputValue);
+
+  // Reset text input to an empty string.
+  document.querySelector("#state-search").value = "";
 });
 
-// Creates and defines the removeCountry() function.
-function removeCountry() {
-  // While the countries class has a child element...
-  while (countriesDiv.lastChild) {
-    // ... keep removing until there's no more children.
-    countriesDiv.removeChild(countriesDiv.lastChild);
+
+
+
+// Remove previous state data.
+function removeState(elementToRemove) {
+  while (elementToRemove.lastChild) {
+    elementToRemove.removeChild(elementToRemove.lastChild);
   }
-}
+};
+
+
+
+
+
+
+
+
+// Global variables for dropdown menu.
+const selectTag = document.querySelector("#select-state");
+
+const dataContainer2 = document.querySelector("#data-container");
+
+
+
+// For dynamic drop down list
+const getStateList = async () => {
+  try {
+    const getStateUrl = "http://api.openweathermap.org/data/2.5/weather?q=california&appid=1d015797722f985c58d03693976c4b24"
+    const response = await axios.get(getStateURL);
+    // console.log(response.data);
+    const stateList = Object.keys(response.data);
+    setOptions(stateList);
+  } catch (error) {
+    console.error(error);
+  }
+};
+getStateList();
+
+
+
+
+// Create form option tags from the states list.
+function setOptions(list) {
+  // console.log(list);
+  list.forEach((state) => {
+    // console.log(state);
+    let optionTag = document.createElement("option");
+    optionTag.textContent = breed;
+    selectTag.append(optionTag);
+  });
+};
+
+
+
+
+// Select the option tag value.
+function getValue(e) {
+  e.preventDefault();
+  let optionValue = selectTag.value;
+  // console.log(optionValue);
+  getBreedImage(optionValue);
+  return optionValue;
+};
+
+
+
+
+// Set up event handler to capture option value.
+form.addEventListener("submit", getValue);
+
+
+
+
+// Remove old image from the DOM.
+function removeElement(element) {
+  while (element.lastChild) {
+    element.removeChild(element.lastChild);
+  }
+};
