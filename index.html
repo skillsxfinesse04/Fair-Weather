@@ -8,17 +8,15 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="./app.js"></script>
   <link rel="stylesheet" href="./style.css">
-  <title>U.S. City & State Weather Lookup</title>
+  <title>U.S. Cities Weather Lookup</title>
 </head>
 
 <body>
-  <h1>U.S. City & State Weather Lookup</h1>
+  <h1>U.S. Cities Weather Lookup</h1>
   <form>
-    <!-- Creates a text input box with the "Type State" placeholder. -->
+    <!-- Text input box. -->
     <input type="text" name="city" placeholder="Type City" id="city-search" />
-    <!-- Creates a submit button. -->
-    <!-- <input type="submit" placeholder="Get City" id="get-city" /> -->
-    <!-- Creates a dropdown menu w/ "Select State" as the default selection. -->
+    <!-- Dropdown menu. -->
     <select id="select-state">
       <option disabled selected>Select State</option>
       <option value="Alabama">Alabama</option>
@@ -70,13 +68,12 @@
       <option value="West Virginia">West Virginia</option>
       <option value="Wisconsin">Wisconsin</option>
       <option value="Wyoming">Wyoming</option>
-
     </select>
-    <!-- Creates a button w/ "Submit" as the text, assigned to a class called button (reffered to as button class from here out). -->
+    <!-- Submit button. -->
     <button class="button">Submit</button>
   </form>
-  <div style="margin-top: 25px;" id="state-data">
-  </div>
+  <!-- Where the city and weather information appears. -->
+  <div style="margin-top: 25px;" id="city-data"></div>
 </body>
 
 </html>
