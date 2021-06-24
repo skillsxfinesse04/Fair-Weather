@@ -1,9 +1,10 @@
-/* Fix later, displays in a row.
-.countries {
+/* https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+.Site {
   display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.country {
-  display: flex;
-  flex-direction: column;
-} */
+.Site-content {
+  flex: 1;
+}
