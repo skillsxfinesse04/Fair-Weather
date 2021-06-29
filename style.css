@@ -1,8 +1,16 @@
-/* Google Fonts: Lora & Ubuntu */
+/* =================================================
+Fonts.
+================================================= */
+
+/* Google Fonts: PT Mono and Russo One */
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Russo+One&display=swap');
 
 
 
+
+/* =================================================
+Header, body, and footer.
+================================================= */
 
 /* Center the header vertically using Flexbox. */
 /* https://www.w3schools.com/csS/css_align.asp */
@@ -43,6 +51,10 @@ footer {
 
 
 
+
+/* =================================================
+Classes.
+================================================= */
 
 /* Expands the containers in the body (.Site) and main (.Site-content) elements, which keeps the footer to the bottom of the screen. */
 /* https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
@@ -94,7 +106,20 @@ footer {
 }
 
 
+.fa-sync {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 3px black;
+}
 
+
+
+
+/* =================================================
+Media queries.
+================================================= */
 
 /* Media queries for laptops (retina and non-retina screens). */
 /* https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */

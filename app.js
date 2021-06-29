@@ -1,4 +1,6 @@
 
+// API Info
+
 // API Endpoint:  api.openweathermap.org/data/2.5/weather?q={city name},{state code}&appid={API key}&units=imperial
 // API Key: 1d015797722f985c58d03693976c4b24
 
@@ -6,6 +8,7 @@
 
 
 // Global variables:
+
 const dataContainer = document.querySelector("#city-data");
 
 

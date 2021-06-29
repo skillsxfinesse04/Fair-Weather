@@ -11,6 +11,7 @@ Allows the user to lookup local weather forecasts for all U.S. cities.
 ## API and Data Sample
 
 API: [OpenWeather](https://openweathermap.org/current)
+
 ```
 {
     "coord": {
