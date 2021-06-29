@@ -137,3 +137,11 @@ Media queries.
   and (-webkit-min-device-pixel-ratio:: 2)
   and (min-resolution: 192dpi) {
 }
+
+/* If the screen orientation is landscape, the background color will turn white. */
+/* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries */
+@media (orientation: landscape) {
+    body {
+        color: white;
+    }
+}
