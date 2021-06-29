@@ -1,14 +1,14 @@
-## App Title
+## Fair Weather
 
-U.S Cities Weather Lookup (URL goes here)
-
-
-## App Description
-
-Allows the user to lookup weather conditions in all U.S. cities.
+Fair Weather: (URL goes here)
 
 
-## API and API Snippet
+## Project Description
+
+Allows the user to lookup local weather forecasts for all U.S. cities.
+
+
+## API and Data Sample
 
 API: [OpenWeather](https://openweathermap.org/current)
 ```
@@ -85,7 +85,7 @@ API: [OpenWeather](https://openweathermap.org/current)
 - Add a random location functionality.
 
 
-## Goals
+## Project Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -93,8 +93,8 @@ API: [OpenWeather](https://openweathermap.org/current)
 |Jun 23| Project Approval / Core Application Structure (HTML, CSS, etc.) | Complete
 |Jun 23-4| Psuedocode / Code | Complete
 |Jun 24| Initial Clickable Model | Complete
-|Jun 25| MVP | Incomplete
-|Jun 28| Presentations | Incomplete
+|Jun 25| MVP | Complete
+|Jun 28| Presentations | Complete
 
 
 ## Priority Matrix
@@ -106,17 +106,48 @@ API: [OpenWeather](https://openweathermap.org/current)
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Axios/API request functionality | H | 3 hr | x hr | x hr |
-| Core application structure (HTML) | H | 3 hr | x hr | x hr |
-| Core application structure (Javascript) | H | 3 hr | x hr | x hr |
-| Core application structure (CSS) | H | 3 hr | x hr | x hr |
-| Search bar functionality | H | 3 hr | x hr | x hr |
-| Dropdown menu functionality | H | 3 hr | x hr | x hr |
-| Dynamically render content | H | 3 hr | x hr | x hr |
-| Clear search results on query | H | 3 hr | x hr | x hr |
-| Initial clickable model | H | 3 hr | x hr | x hr |
-| Style with Flexbot| H | 3 hr | x hr | x hr |
-| Deploy site to a hosting service| H | 3 hr | x hr | x hr |
-| Minimum viable product | H | 3 hr | x hr | x hr |
-| Clean code | H | 3 hr | x hr | x hr |
-| Total | H | 39 hrs| x hrs | x hrs |
+| Axios/API request functionality | H | 3 hr | 3 hr | 3 hr |
+| Core application structure (HTML) | H | 3 hr | 3 hr | 3 hr |
+| Core application structure (Javascript) | H | 3 hr | 3 hr | 3 hr |
+| Core application structure (CSS) | H | 3 hr | 3 hr | 3 hr |
+| Search bar functionality | H | 3 hr | 3 hr | 3 hr |
+| Dropdown menu functionality | H | 3 hr | 3 hr | 3 hr |
+| Dynamically render content | H | 3 hr | 3 hr | 3 hr |
+| Clear search results on query | H | 3 hr | 3 hr | 3 hr |
+| Initial clickable model | H | 3 hr | 3 hr | 3 hr |
+| Style with Flexbot| H | 3 hr | 3 hr | 3 hr |
+| Deploy site to a hosting service| H | 3 hr | 3 hr | 3 hr |
+| Minimum viable product | H | 3 hr | 3 hr | 3 hr |
+| Clean code | H | 3 hr | 3 hr | 3 hr |
+| Total | H | 39 hrs| 39 hrs | 39 hrs |
+
+
+## Code Snippet
+
+The code snippet below takes the values of the text input box (type city) and dropdown menu (select state), then pulls the data from OpenWeather API when the submit button is clicked.
+
+```
+// Creates a variable that targets the form element.
+const form = document.querySelector('form');
+
+// When the submit button is clicked...
+form.addEventListener('submit', (e) => {
+  // Prevents page from reloading when submit is clicked.
+  e.preventDefault();
+  // Takes value from text input box.
+  const cityTextInput = document.querySelector('#city-search').value;
+  // console.log(cityTextInput);
+  // Takes value from from dropdown menu.
+  const stateOptionInput = document.querySelector('#select-state').value;
+  // console.log(stateOptionInput);
+  // Pulls data from API using the values from cityTextInput and stateOptionInput as parameters.
+  fetchData(cityTextInput, stateOptionInput);
+});
+```
+
+
+## Change Log
+
+- Added icons from Font Awesome.
+- Cleaned up code and added comments.
+- Moved random location functionality to PostMVP.

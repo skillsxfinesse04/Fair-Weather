@@ -5,15 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- API data. -->
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="./app.js"></script>
+  <!-- Font awesome icons. -->
+  <script src="https://kit.fontawesome.com/37687ca86a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
-  <title>U.S. Cities Weather Lookup</title>
+  <title>Fair Weather</title>
 </head>
 
 <body class="Site">
   <header>
-    <h1>U.S. Cities Weather Lookup</h1>
+    <!-- Font awesome icon. -->
+    <i class="fas fa-cloud-sun fa-5x"></i>
+    <h1>Fair Weather</h1>
     <main class="Site-content">
       <form>
         <!-- Text input box. -->
@@ -75,8 +80,34 @@
         <button class="button">Submit</button>
       </form>
   </header>
+  <!-- Background image. -->
+  <div class="background">
+    <img class="background2"
+      src="https://static.sciencelearn.org.nz/images/images/000/003/176/full/FIR_ITV_RuralFireRisk_Weather_CloudySky_123RF_901534.jpg?1522314128"
+      alt="Cloudy skies.">
+  </div>
+  <div>
+    <h1 class="text">
+      Welcome to Fair Weather!
+    </h1>
+    <p class="text">
+      We provide local weather forecasts for all U.S. cities!
+    </p>
+  </div>
+  <div>
+    <h2 class="text">
+      How To Get Weather
+    </h2>
+    <p class="text">
+      To get the current weather type your city name, select your state, and then click the submit button. <br> City
+      name,
+      temperature,
+      weather description, and timezone will appear below.
+    </p>
+    <i class="fas fa-temperature-low fa-3x"></i>
+  </div>
   <!-- Where the city and weather information appears. -->
-  <div style="margin-top: 25px;" id="city-data"></div>
+  <div style="margin-top: 25px;" id="city-data" class="Site-content"></div>
   </main>
   <footer id="footer">
     <p>Weather sourced from <a href="https://openweathermap.org/current">OpenWeather API</a></p>
