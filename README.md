@@ -1,6 +1,6 @@
 ## Fair Weather
 
-Fair Weather: (URL goes here)
+[Fair Weather](https://skillsxfinesse04.github.io/Fair-Weather/)
 
 
 ## Project Description
