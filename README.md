@@ -1,12 +1,10 @@
 ## Fair Weather
 
-Fair Weather: (URL goes here)
-
+[Fair Weather](https://skillsxfinesse04.github.io/Fair-Weather/)
 
 ## Project Description
 
 Allows the user to lookup local weather forecasts for all U.S. cities.
-
 
 ## API and Data Sample
 
@@ -62,13 +60,11 @@ API: [OpenWeather](https://openweathermap.org/current)
 }
 ```
 
-
 ## Wireframes
 
 ![P1 Wireframe](https://user-images.githubusercontent.com/66581031/122944389-c9fdf500-d345-11eb-95d7-bef75edb2d7f.png)
 
-
-## MVP 
+## MVP
 
 - Use axios to make a request to get current weather conditions.
 - Add search bar and dropdown menu functionality.
@@ -77,51 +73,46 @@ API: [OpenWeather](https://openweathermap.org/current)
 - Style using Flexbox.
 - Deploy site to a hosting service.
 
-
-## PostMVP  
+## PostMVP
 
 - Home page should pull users current location from browser.
 - Add localstorage so user's data can be saved to their browser.
 - Add animations for dynamically rendered content.
 - Add a random location functionality.
 
-
 ## Project Schedule
 
-|  Day | Deliverable | Status
-|---|---| ---|
-|Jun 21-22| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|Jun 23| Project Approval / Core Application Structure (HTML, CSS, etc.) | Complete
-|Jun 23-4| Psuedocode / Code | Complete
-|Jun 24| Initial Clickable Model | Complete
-|Jun 25| MVP | Complete
-|Jun 28| Presentations | Complete
-
+| Day       | Deliverable                                                     | Status   |
+| --------- | --------------------------------------------------------------- | -------- |
+| Jun 21-22 | Prompt / Wireframes / Priority Matrix / Timeframes              | Complete |
+| Jun 23    | Project Approval / Core Application Structure (HTML, CSS, etc.) | Complete |
+| Jun 23-4  | Psuedocode / Code                                               | Complete |
+| Jun 24    | Initial Clickable Model                                         | Complete |
+| Jun 25    | MVP                                                             | Complete |
+| Jun 28    | Presentations                                                   | Complete |
 
 ## Priority Matrix
 
 ![P1 Priority Matrix](https://user-images.githubusercontent.com/66581031/122933019-3d9b0480-d33c-11eb-83d9-b1f82e854422.png)
 
-
 ## Timeframes
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Axios/API request functionality | H | 3 hr | 3 hr | 3 hr |
-| Core application structure (HTML) | H | 3 hr | 3 hr | 3 hr |
-| Core application structure (Javascript) | H | 3 hr | 3 hr | 3 hr |
-| Core application structure (CSS) | H | 3 hr | 3 hr | 3 hr |
-| Search bar functionality | H | 3 hr | 3 hr | 3 hr |
-| Dropdown menu functionality | H | 3 hr | 3 hr | 3 hr |
-| Dynamically render content | H | 3 hr | 3 hr | 3 hr |
-| Clear search results on query | H | 3 hr | 3 hr | 3 hr |
-| Initial clickable model | H | 3 hr | 3 hr | 3 hr |
-| Style with Flexbot| H | 3 hr | 3 hr | 3 hr |
-| Deploy site to a hosting service| H | 3 hr | 3 hr | 3 hr |
-| Minimum viable product | H | 3 hr | 3 hr | 3 hr |
-| Clean code | H | 3 hr | 3 hr | 3 hr |
-| Total | H | 39 hrs| 39 hrs | 39 hrs |
-
+| Component                               | Priority | Estimated Time | Time Invested | Actual Time |
+| --------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Axios/API request functionality         |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Core application structure (HTML)       |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Core application structure (Javascript) |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Core application structure (CSS)        |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Search bar functionality                |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Dropdown menu functionality             |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Dynamically render content              |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Clear search results on query           |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Initial clickable model                 |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Style with Flexbot                      |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Deploy site to a hosting service        |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Minimum viable product                  |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Clean code                              |    H     |      3 hr      |     3 hr      |    3 hr     |
+| Total                                   |    H     |     39 hrs     |    39 hrs     |   39 hrs    |
 
 ## Code Snippet
 
@@ -145,7 +136,6 @@ form.addEventListener('submit', (e) => {
   fetchData(cityTextInput, stateOptionInput);
 });
 ```
-
 
 ## Change Log
 
