@@ -142,3 +142,7 @@ form.addEventListener('submit', (e) => {
 - Added icons from Font Awesome.
 - Cleaned up code and added comments.
 - Moved random location functionality to PostMVP.
+  <<<<<<< HEAD
+  =======
+- Changed background image.
+  > > > > > > > 4a4f3cc7b0e2cd8e574f8fee3d8bfff04bd0e5f7
